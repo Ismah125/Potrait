@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  padding: 20px;
+  background-image: url(bi2.jpg);
+}
+
+table,th,td{
+  border: 1px solid black;
+}
+
+th{
+  background-color: lightsteelblue;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: url(mb.jpg);
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content p {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content p:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  padding: 30px;
+  font-size: 60px;
+  text-align: center;
+  font-family: Informal Roman;
+  text-shadow: 3px 3px white;
+  background-image: url(H1.jpg);
+
+}
+
+.column {   
+  float: center;
+  width: 75%;
+  margin-left: 13%;
+}
+
+.columnimg {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.rowimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.timg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-family: Informal Roman;
+  font-size: 150%;
+  object-position: center;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px white;
+  background-image: url(H2.jpg);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body onload="window.alert('Page successfully loaded');">
+
+<div class="header">
+  <h1>My Hobby</h1>
+</div>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="main.html">My Life</a>
+      <a href="education.html">My Education</a>
+      <a href="dream.html">My Dream</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p><i class="fa fa-instagram">ismh_nr</i></p>
+      <p><i class="fa fa-twitter">nr_ismh</i></p>
+      <p><i class="fa fa-facebook">nur ismah</i></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card" style="background-image:url(mv.jpg);">
+      <h2 style="font-family: Pristina">WATCHING MOVIE</h2>
+      <div class="timg">
+          <table>
+            <th><b>Harry Potter and The Philosopher Stone</b></th>
+            <th><b>The Karate Kid</b></th>
+            <tr>
+              <td>
+                <video width="450" controls>
+                  <source src="Harry Potter.mp4" type="video/mp4">
+                </video>
+              </td>
+              <td>
+                <video width="450" controls>
+                  <source src="The Karate Kid.mp4" type="video/mp4">
+                </video></td>
+            </tr>
+            <tr>
+              <th><b>Moana</b></th>
+              <th><b>Fantastic Beasts and Where to Find Them</b></th>
+            </tr>
+            <tr>
+              <td>
+                <video width="450" controls>
+                  <source src="Moana.mp4" type="video/mp4">
+                </video>
+              </td>
+              <td><video width="450" controls>
+                  <source src="Fantastic Beast.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+    <div class="card" style="background-image:url(ms.jpg);">
+      <h2 style="font-family: Pristina">LISTENING TO MUSIC</h2>
+      <div class="timg" style="height:100%;">
+      <table>
+            <th><b>Start Over by Gaho</b></th>
+            <th><b>Stone Block by Ha Hyun Woo</b></th>
+            <th><b>Omae Wa Mou</b></th>
+            <tr>
+              <td>
+                <audio controls>
+                  <source src="StartOver.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="Stone Block.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="Omae Wa Mou.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <th><b>Back In Time by Lyn</b></th>
+              <th><b>This Love by Davichi</b></th>
+              <th><b>Beautiful Life</b></th>
+            </tr>
+            <tr>
+              <td>
+                <audio controls>
+                  <source src="Back In Time.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="This Love.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="Beautiful Life.mp3" type="audio/mpeg">
+                </audio>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <div class="card" style="background-image:url(rw.jpg);">
+      <h2 style="font-family: Pristina">READING BOOK</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <p>Most likely to read malay novel</p>
+            <div class="columnimg"><img src="r1.jpg" width="100%"></div>
+            <div class="columnimg"><img src="r2.jpg" width="100%"></div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <h2><p><img src="2.jpg" width="35" height="35"><b> nismh12@gmail.com </b></p>
+  <p><img src="1.jpg" width="25" height="25"><b> 0169949999 </b></p></h2>
+</div>
+
+</body>
+</html>

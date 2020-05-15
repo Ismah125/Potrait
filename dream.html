@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  padding: 20px;
+  background-image: url(bi2.jpg);
+}
+
+h2{
+  font-family: Informal Roman;
+  font-size: 200%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: url(mb.jpg);
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content p {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content p:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  padding: 30px;
+  font-size: 60px;
+  text-align: center;
+  font-family: Informal Roman;
+  text-shadow: 3px 3px white;
+  background-image: url(dh.jpg);
+
+}
+
+.column {   
+  float: center;
+  width: 75%;
+  margin-left: 13%;
+}
+
+
+.timg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 5px;
+  font-family: Pristina;
+  font-size: 150%;
+  object-position: center;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px white;
+  background-image: url(dhh.jpg);
+  margin-top: 20px;
+  font-size: 130%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.columnimg {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.rowimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Slides1, .Slides2 {display: none}
+img {vertical-align: middle;
+      max-height: 50%}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body onload="window.alert('Page successfully loaded');">
+
+<div class="header">
+  <h1>My Dream</h1>
+</div>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="main.html">My Life</a>
+      <a href="education.html">My Education</a>
+      <a href="hobby.html">My Hobby</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p><i class="fa fa-instagram">ismh_nr</i></p>
+      <p><i class="fa fa-twitter">nr_ismh</i></p>
+      <p><i class="fa fa-facebook">nur ismah</i></p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="column">
+
+    <div class="card">
+      <h2>Travel Around The World</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <div class="slideshow-container">
+              <div class="Slides1">
+                <img src="k1.jpg" style="width:100%">
+              </div>
+
+              <div class="Slides1">
+                <img src="j1.jpg" style="width:100%">
+              </div>
+
+              <div class="Slides1">
+                <img src="fr1.jpg" style="width:100%">
+              </div>
+
+              <div class="Slides1">
+                <img src="c1.jpg" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="card">
+      <h2>Have My Own House</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <div class="slideshow-container">
+              <div class="Slides2">
+                <img src="Dh1.jpg" style="width:100%">
+              </div>
+
+              <div class="Slides2">
+                <img src="Dh2.jpg" style="width:100%">
+              </div>
+
+              <div class="Slides2">
+                <img src="Dh3.jpg" style="width:100%">
+              </div>
+
+              <div class="Slides2">
+                <img src="Dh4.jpg" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="card">
+      <h2>Perform Hajj</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <div class="columnimg"><img src="mk1.jpg" width="100%"></div>
+            <div class="columnimg"><img src="mk2.jpg" width="100%"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <h3><p><img src="2.jpg" width="35" height="35"><b> nismh12@gmail.com </b></p>
+  <p><img src="1.jpg" width="25" height="25"><b> 0169949999 </b></p></h3>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["Slides1", "Slides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+</script>
+
+</body>
+</html>

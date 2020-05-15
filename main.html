@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  padding: 20px;
+  background-image: url(bi2.jpg);
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: url(mb.jpg);
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content p {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  font-size: 100;
+}
+
+.dropdown-content p:hover {
+  background-color: #ddd;
+  font-size: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  padding: 30px;
+  font-size: 60px;
+  text-align: center;
+  font-family: Informal Roman;
+  text-shadow: 3px 3px white;
+  background-image: url(header2.jpg);
+
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.timg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: Informal Roman;
+  font-size: 150%;
+  text-shadow: 3px 2px white;
+}
+
+.card {
+   background-color: white;
+   padding: 10px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  text-shadow: 3px 3px white;
+  background-image: url(header22.jpg);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body onload="window.alert('Page successfully loaded');">
+
+<div class="header">
+  <h1>My Life</h1>
+</div>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="education.html">My Education</a>
+      <a href="hobby.html">My Hobby</a>
+      <a href="dream.html">My Dream</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p><i class="fa fa-instagram">ismh_nr</i></p>
+      <p><i class="fa fa-twitter">nr_ismh</i></p>
+      <p><i class="fa fa-facebook">nur ismah</i></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>HAPPY EID!</h2>
+      <h3>My family picture, June 5, 2019</h3>
+      <div class="timg" style="height:400px; background-image: url(fp.jpg);"></div>
+      <p>It breaks my heart</p>
+      <p>I will celebrate this year eid without my dad. My dad has died in this february. We gonna miss him so much </p>
+    </div>
+
+    <div class="card">
+      <h2>MISSING THEM SO MUCH</h2>
+      <h3>Precious Time, Feb 2, 2020</h3>
+      <div class="timg" style="height:400px; background-image: url(ff.jpg)"></div>
+      <p>My Classmates</p>
+      <p>This pkp makes me miss them so much. Gonna hangout with them soon</p>
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="pp1.jpg" style="width:280px;height:300px;">
+            </div>
+          <div class="flip-card-back">
+             <img src="pp.jpg" style="width:280px;height:300px;">
+          </div>
+          </div>
+        </div>
+
+        <h2 style="text-align: center;">Nur Ismah</h2>
+        <ul style="list-style-type:none;">
+            <li>Birthday: 12 May 1999</li>
+            <li>*</li>
+            <li>BirthPlace: Port Dickson</li>
+            <li>*</li>
+            <li>Ambition: Software Designer</li>
+            <li>*</li>
+            <li>Skill:</li>
+            <ul style="list-style-type:none;">
+              <li>Programming : <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></li>
+            <li>Html  : <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></li>
+            <li>Css : <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></li>
+            <li>Javascript : <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></li>
+            </ul>
+        </ul>
+        <p style="text-align: center; color: gray;">"Being a carefree person"</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <a href="education.html"><div class="timg" style="background-image:url(f2.jpg);">
+      <b>My Education</b></div></a>
+      <br>
+      <a href="hobby.html"><div class="timg" style="background-image:url(f3.jpg);"><b>My Hobby</b></div><br></a>
+      <a href="dream.html"><div class="timg" style="background-image:url(f4.jpg);"><b>My Dream</b></div></a>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2><img src="2.jpg" width="35" height="35"><b> nismh12@gmail.com </b></h2>
+  <h2><img src="1.jpg" width="25" height="25"><b> 0169949999 </b></h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  padding: 20px;
+  background-image: url(bi2.jpg);
+}
+
+h2{
+  font-family: Informal Roman;
+  font-size: 200%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image: url(mb.jpg);
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content p {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content p:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header {
+  padding: 30px;
+  font-size: 60px;
+  text-align: center;
+  font-family: Informal Roman;
+  text-shadow: 3px 3px white;
+  background-image: url(ah.jpg);
+
+}
+
+.column {   
+  float: center;
+  width: 75%;
+  margin-left: 13%;
+}
+
+
+.timg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 5px;
+  font-family: Pristina;
+  font-size: 150%;
+  object-position: center;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px white;
+  background-image: url(ah1.jpg);
+  margin-top: 20px;
+  font-size: 130%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.columnimg {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.rowimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body onload="window.alert('Page successfully loaded');">
+
+<div class="header">
+  <h1>My Education</h1>
+</div>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="main.html">My Life</a>
+      <a href="hobby.html">My Hobby</a>
+      <a href="dream.html">My Dream</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p><i class="fa fa-instagram">ismh_nr</i></p>
+      <p><i class="fa fa-twitter">nr_ismh</i></p>
+      <p><i class="fa fa-facebook">nur ismah</i></p>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <h2>Primary School</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <p>I studied here until grade 3. After that, I transfer to Kelantan</p>
+            <div class="columnimg"><img src="ps1.jpg" width="100%"></div>
+            <div class="columnimg"><img src="ps2.jpg" width="100%"></div>
+          </div>
+          <div class="rowimg">
+            <p>My second primary school.This school is at Pengkalan Chepa,Kelantan.</p>
+            <div class="columnimg"><img src="ps3.jpg" width="100%"></div>
+            <div class="columnimg"><img src="ps4.jpg" width="100%"></div>
+          </div>
+        </div>
+  </div>
+
+    <div class="card">
+      <h2>Secondary School</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <p>After that, I futher my studied at SMK Pengkalan Chepa.</p>
+            <div class="columnimg"><img src="ss1.jpg" width="100%"></div>
+            <div class="columnimg"><img src="ss2.jpg" width="100%"></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="card">
+      <h2>Matriculation College</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <p>After that, I futher my studied at Kelantan Matriculation College.
+               I took computer science modul there.</p>
+            <div class="columnimg">
+              <video width="450" controls>
+                  <source src="Kmkt.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columnimg"><img src="m2.jpg" width="100%"></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="card">
+      <h2>University</h2>
+        <div class="timg">
+          <div class="rowimg">
+            <p>Lastly, I studied Computer Science at UiTM Kuala Terengganu</p>
+            <div class="columnimg"><img src="u1.jpg" width="100%"></div>
+            <div class="columnimg"><img src="u2.jpg" width="100%"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <h3><p><img src="2.jpg" width="35" height="35"><b> nismh12@gmail.com </b></p>
+  <p><img src="1.jpg" width="25" height="25"><b> 0169949999 </b></p></h3>
+</div>
+
+</body>
+</html>
